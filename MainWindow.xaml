@@ -1,0 +1,24 @@
+﻿<Window x:Class="пр.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:пр"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Menu" Width="49" Click="MenuItem_Click">
+                <MenuItem Header="Выход" Click="Exit_Click"></MenuItem>
+                <MenuItem Header="О программе" ToolTip ="Головиной В.А. ИСП-31"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Label Content="Вычислить сумму целых случайных чисел, распределенных в диапазоне от 2 до 10, &#xD;&#xA;пока эта сумма не превышает некоторого числа K. Вывести на экран &#xD;&#xA;сгенерированные числа, значение суммы, и количество сгенерированных чисел." Margin="111,23,111,317"/>
+        <TextBox x:Name="valK" HorizontalAlignment="Left" Margin="245,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="22" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Введите число K" HorizontalAlignment="Left" Margin="261,146,0,0" VerticalAlignment="Top" Height="37" Width="134"/>
+        <Label Content="сгенерированные&#xA; числа, их сумма и кол-во" HorizontalAlignment="Left" Margin="384,163,0,0" VerticalAlignment="Top" Height="47" Width="152"/>
+        <TextBox x:Name="value1" HorizontalAlignment="Left" Margin="539,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="44" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="400,259,0,0" VerticalAlignment="Top" Width="273" Height="49" Click="Button_Click"/>
+
+    </Grid>
+</Window>
